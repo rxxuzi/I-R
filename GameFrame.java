@@ -6,7 +6,8 @@ import javax.swing.JFrame;
 @SuppressWarnings("serial")
 public class GameFrame extends JFrame {
 	GameFrame(){
-		
+		String pic_path = "";
+		String title_name = "";
 		this.add(new GamePanel());
 		//this.setTitle("Snake");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -15,12 +16,12 @@ public class GameFrame extends JFrame {
 		this.setVisible(true);
 		this.setLocation(600,40);
 		
-		/*ƒAƒCƒRƒ“‚ğİ’è‚·‚é*/
-		ImageIcon icon = new ImageIcon("./rsc/pic/me.png");
+		/*ã‚¢ã‚¤ã‚³ãƒ³ã‚’è¨­å®šã™ã‚‹*/
+		ImageIcon icon = new ImageIcon(pic_path);
 	    this.setIconImage(icon.getImage()); 
 	    
-	    /*ƒtƒŒ[ƒ€ƒ^ƒCƒgƒ‹*/
-	    this.setTitle("Snake Game");
+	    /*ãƒ•ãƒ¬ãƒ¼ãƒ ã‚¿ã‚¤ãƒˆãƒ«*/
+	    this.setTitle(title_name);
 		
 	}
 }
