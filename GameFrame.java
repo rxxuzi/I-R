@@ -9,7 +9,7 @@ public class GameFrame extends JFrame {
 		String pic_path = "";
 		String title_name = "";
 		this.add(new GamePanel());
-		//this.setTitle("Snake");
+		
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setResizable(false);
 		this.pack();
@@ -18,10 +18,10 @@ public class GameFrame extends JFrame {
 		
 		/*アイコンを設定する*/
 		ImageIcon icon = new ImageIcon(pic_path);
-	    this.setIconImage(icon.getImage()); 
+	    	this.setIconImage(icon.getImage()); 
 	    
-	    /*フレームタイトル*/
-	    this.setTitle(title_name);
+	    	/*フレームタイトル*/
+	    	this.setTitle(title_name);
 		
 	}
 }
